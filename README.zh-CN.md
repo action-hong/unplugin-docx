@@ -2,17 +2,17 @@
 
 [![NPM version](https://img.shields.io/npm/v/unplugin-docx-html?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-docx-html)
 
-English | [简体中文](./README.zh-CN.md)
+简体中文 | [English](./README.md)
 
-use [`mammoth`](https://github.com/mwilliamson/mammoth.js) convert docx to html
+通过[`mammoth`](https://github.com/mwilliamson/mammoth.js)，将如引入的`docx`文件当做纯`html`字符串
 
-## Motivation
+## 动机
 
-In developing software, it is often necessary to add some privacy and user agreement contents to the page, and the legal affairs are often provided as word documents. This time we need to convert it to `html` first, and then write it into the template. So the plugin is written to automatically do the conversion process.
+开发软件中，经常需要添加一些隐私、用户协议的内容到页面中，而法务提供的往往是word文档。这时候就需要我们先将其转化成`html`，然后再写入模板中。因此编写了该插件自动做转化这个过程。
 
-(PS: more suitable for plain text word)
+（PS: 比较适合纯文本的word）
 
-## Install
+## 安装
 
 ```bash
 npm i unplugin-docx-html
@@ -32,7 +32,7 @@ export default defineConfig({
 })
 ```
 
-Example: [`playground/`](./playground/)
+实例: [`playground/`](./playground/)
 
 <br></details>
 
@@ -80,7 +80,7 @@ export default {
 }
 ```
 
-> This module works for both Nuxt 2 and [Nuxt Vite](https://github.com/nuxt/vite)
+> 该模块可以同时作用于 Nuxt 2， [Nuxt Vite](https://github.com/nuxt/vite)
 
 <br></details>
 
@@ -102,11 +102,11 @@ module.exports = {
 
 ## Configuration
 
-Pefer to the [mammoth.convertToHtml's options](https://github.com/mwilliamson/mammoth.js#mammothconverttohtmlinput-options) for detail.
+查看[mammoth.convertToHtml's options](https://github.com/mwilliamson/mammoth.js#mammothconverttohtmlinput-options)了解更改配置相关内容
 
-## Usage
+## 使用
 
-we can import `docx` as plain HTML
+我们可以直接引入`docx`文件，将其当做一个纯的`htm`l字符串
 
 ```ts
 import html from './demo.docx'
@@ -116,7 +116,7 @@ document.getElementById('app')!.innerHTML = html
 
 > :warning: 
 >
-> if you use `TypeScript`, you should declear `*.docx` module like below
+> 如果你使用的是`TypeScript`, 你还需要做如下声明：
 
 ```ts
 declare module '*.docx' {
@@ -125,6 +125,6 @@ declare module '*.docx' {
 }
 ```
 
-## Thanks
+## 致谢
 
 - [Mammoth](https://github.com/mwilliamson/mammoth.js)
