@@ -100,7 +100,7 @@ module.exports = {
 
 <br></details>
 
-## Configuration
+## 配置
 
 查看[mammoth.convertToHtml's options](https://github.com/mwilliamson/mammoth.js#mammothconverttohtmlinput-options)了解更改配置相关内容
 
