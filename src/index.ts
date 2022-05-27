@@ -15,12 +15,8 @@ export default createUnplugin<Options>(options => ({
       messages.forEach((message) => {
         console.log('[unplugin-docx]', message)
       })
-      return value
+      return `export default ${JSON.stringify(value)}`
     }
     return null
-  },
-  transform(code, id) {
-    if (id.endsWith('docx'))
-      return `export default ${JSON.stringify(code)}`
   },
 }))
