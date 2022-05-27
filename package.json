@@ -1,5 +1,5 @@
 {
-  "name": "unplugin-starter",
+  "name": "unplugin-docx-html",
   "version": "0.1.0",
   "packageManager": "pnpm@7.1.1",
   "description": "Register global imports on demand for Vite and Webpack",
@@ -10,14 +10,14 @@
     "rollup",
     "transform"
   ],
-  "homepage": "https://github.com/antfu/unplugin-starter#readme",
+  "homepage": "https://github.com/antfu/unplugin-docx-html#readme",
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
+    "url": "https://github.com/antfu/unplugin-docx-html/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-starter.git"
+    "url": "git+https://github.com/antfu/unplugin-docx-html.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -65,6 +65,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "mammoth": "^1.4.21",
     "unplugin": "^0.6.3"
   },
   "devDependencies": {

@@ -1,1 +1,3 @@
-document.getElementById('app')!.innerHTML = '__UNPLUGIN__'
+import html from './demo.docx'
+
+document.getElementById('app')!.innerHTML = html
