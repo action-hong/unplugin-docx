@@ -1,5 +1,5 @@
 {
-  "name": "unplugin-docx-html",
+  "name": "unplugin-docx",
   "version": "0.1.0",
   "packageManager": "pnpm@7.1.1",
   "description": "Register global imports on demand for Vite and Webpack",
@@ -8,16 +8,22 @@
     "vite",
     "webpack",
     "rollup",
-    "transform"
+    "transform",
+    "docx",
+    "docx-to-html"
   ],
-  "homepage": "https://github.com/antfu/unplugin-docx-html#readme",
-  "bugs": {
-    "url": "https://github.com/antfu/unplugin-docx-html/issues"
-  },
   "license": "MIT",
+  "author": {
+    "name": "kkopite",
+    "email": "kkopitehong@foxmail.com"
+  },
+  "homepage": "https://github.com/action-hong/unplugin-docx#readme",
+  "bugs": {
+    "url": "https://github.com/action-hong/unplugin-docx/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-docx-html.git"
+    "url": "git+https://github.com/action-hong/unplugin-docx.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",

@@ -4,16 +4,16 @@ import mammoth from 'mammoth'
 import type { Options } from './types'
 
 export default createUnplugin<Options>(options => ({
-  name: 'unplugin-docx-html',
+  name: 'unplugin-docx',
   enforce: 'pre',
   async load(id) {
     if (id.endsWith('.docx')) {
       const { value, messages } = await mammoth.convertToHtml({
         path: id,
       }, options)
-      console.log('[unplugin-docx-html]', `converted ${id}`)
+      console.log('[unplugin-docx]', `converted ${id}`)
       messages.forEach((message) => {
-        console.log('[unplugin-docx-html]', message)
+        console.log('[unplugin-docx]', message)
       })
       return value
     }

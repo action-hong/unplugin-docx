@@ -1,6 +1,6 @@
 # DOCX loader for unplugin
 
-[![NPM version](https://img.shields.io/npm/v/unplugin-docx-html?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-docx-html)
+[![NPM version](https://img.shields.io/npm/v/unplugin-docx?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-docx)
 
 简体中文 | [English](./README.md)
 
@@ -15,7 +15,7 @@
 ## 安装
 
 ```bash
-npm i unplugin-docx-html
+npm i unplugin-docx
 ```
 
 <details>
@@ -23,7 +23,7 @@ npm i unplugin-docx-html
 
 ```ts
 // vite.config.ts
-import Docx from 'unplugin-docx-html/vite'
+import Docx from 'unplugin-docx/vite'
 
 export default defineConfig({
   plugins: [
@@ -41,7 +41,7 @@ export default defineConfig({
 
 ```ts
 // rollup.config.js
-import Docx from 'unplugin-docx-html/rollup'
+import Docx from 'unplugin-docx/rollup'
 
 export default {
   plugins: [
@@ -61,7 +61,7 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-docx-html/webpack')({ /* options */ })
+    require('unplugin-docx/webpack')({ /* options */ })
   ]
 }
 ```
@@ -75,7 +75,7 @@ module.exports = {
 // nuxt.config.js
 export default {
   buildModules: [
-    ['unplugin-docx-html/nuxt', { /* options */ }],
+    ['unplugin-docx/nuxt', { /* options */ }],
   ],
 }
 ```
@@ -92,7 +92,7 @@ export default {
 module.exports = {
   configureWebpack: {
     plugins: [
-      require('unplugin-docx-html/webpack')({ /* options */ }),
+      require('unplugin-docx/webpack')({ /* options */ }),
     ],
   },
 }
